@@ -1,0 +1,30 @@
+/*General Rules*/
+*{
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  font-family: helvetica;
+  font-size: 18px;
+  line-height: 1.4;
+
+}
+
+.comntent{
+  width: 960px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*NavBar*/
+
+
+/*Header*/
+
+
+/*Main*/
+
+
+/*Footer*/
