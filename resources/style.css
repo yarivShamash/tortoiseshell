@@ -11,14 +11,70 @@ html{
 
 }
 
-.comntent{
+.content{
   width: 960px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+
 }
 
 /*NavBar*/
+nav{
+  display: flex;
+  align-items: center;
+  flex-direction:column;
+}
+
+nav .snap{ /*IMPORTANT: "display: none;" for Tablet and Mobile*/
+  display:block;
+  background-color: red;
+  height: 1rem;
+}
+
+nav .content{
+  background-color: cadetblue;
+  justify-content: space-between;
+}
+
+nav .content .wide{
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem auto;
+  justify-content: space-between;
+}
+
+nav .content .wide .brand{
+  display: flex;
+  /*justify-content: space-around;*/
+  align-items: center;
+  width: 35%;
+  color: white;
+}
+
+nav .content .wide .brand img{
+  margin-left: 2rem;
+}
+
+nav .content .wide .brand .brand-name{
+  margin-left: 1rem;
+}
+
+nav .content .wide ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 35%;
+  margin: 1rem 0;
+}
+
+nav .content .wide ul li a{
+  color: white;
+  text-decoration: none;
+}
+
+nav .content .narrow{
+  display: none;
+}
 
 
 /*Header*/
