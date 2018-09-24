@@ -80,7 +80,7 @@ header{
     justify-content: space-between;
     align-items: center;
     width: 35%;
-    margin: 1rem 0;
+    margin: 1rem 2rem;
   }
 
   nav .content .wide ul li a{
@@ -196,4 +196,54 @@ footer .content .copyright img{
 }
 /*Footer END*/
 
+
 /*Media Queries*/
+
+/*for tablets*/
+@media only screen and (max-width:1024px){
+  nav .snap{ /*"display: none;" for Tablet and Mobile*/
+    display:none;}
+
+  .content{
+    width: 100%; /*result is smaller than the parent tag*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /*NavBar*/
+  nav .content .wide .brand{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    color: white;
+    margin-left: 1rem;
+  }
+
+  nav .content .wide ul{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin-right: 1rem;
+  }
+
+  nav .content .wide ul li{
+    margin-right: 1rem;
+  }
+  /*NavBar END*/
+
+  /*Moto*/
+  /*couldn't position the moto in the the right place :(*/
+  header .content .moto{
+    background-color: white;
+    line-height: 1.2;
+    padding: 0.75rem 4rem;
+    /*margin-left: 2rem;*/
+  }
+
+  h1{
+    font-size: 1.33rem;
+  }
+
+  /*Moto END*/
+}
