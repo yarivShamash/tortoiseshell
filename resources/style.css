@@ -217,7 +217,7 @@ footer .content .copyright img{
   nav .snap{ /*"display: none;" for Tablet and Mobile*/
     display:none;}
 
-  .content{
+  header nav .content{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -252,11 +252,15 @@ footer .content .copyright img{
   /*Moto*/
   /*couldn't position the moto in the the right place :(*/
 
+  header .content {
+    justify-content: flex-end;
+  }
+
   header .content .moto{
     background-color: white;
     line-height: 1.2;
     padding: 0.75rem 4rem;
-    margin-left: 2rem;
+    margin-right: 2rem;
   }
 
   h1{
@@ -315,7 +319,11 @@ p{
     }
 
   /*Moto*/
-  header .moto{ /*couldn't position the moto here as well :(*/
+  /*header .content{
+    display: flex;
+    justify-content: flex-end;
+  }*/
+  header .content .moto{ /*couldn't position the moto here as well :(*/
       position: relative;
       top: 9rem;
       /*left: 11.77rem;*/
@@ -370,12 +378,15 @@ p{
 footer{
   width: 100%;
 }
+
 .content .copyright{
   width: 100%;
   display: flex;
   justify-content: center;
 }
+
 .copyright p{
   display: none;
 }
+
 }/*Mobile query END*/
