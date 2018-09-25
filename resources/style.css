@@ -201,18 +201,35 @@ footer .content .copyright img{
 
 /*for tablets*/
 @media only screen and (max-width:1024px){
+
+  header{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-image: url(./img/glasses-bg.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 22rem;
+      width: auto;
+    }
+
   nav .snap{ /*"display: none;" for Tablet and Mobile*/
     display:none;}
 
   .content{
-    width: 100%; /*result is smaller than the parent tag*/
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
   /*NavBar*/
-  nav .content .wide .brand{
+  header nav{
+    width: 100%
+  }
+
+  .content nav .wide .brand{
     display: flex;
     align-items: center;
     width: 50%;
@@ -234,11 +251,12 @@ footer .content .copyright img{
 
   /*Moto*/
   /*couldn't position the moto in the the right place :(*/
+
   header .content .moto{
     background-color: white;
     line-height: 1.2;
     padding: 0.75rem 4rem;
-    /*margin-left: 2rem;*/
+    margin-left: 2rem;
   }
 
   h1{
@@ -246,4 +264,83 @@ footer .content .copyright img{
   }
 
   /*Moto END*/
-}
+} /*Tablet query END*/
+
+/*Mobile query*/
+@media only screen and (max-width:550px){
+
+  header{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-image: url(./img/glasses-bg.png);
+      background-position: 20%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 17rem;
+      width: 100%;
+    }
+
+    header .content{
+      width: 100%;
+    }
+
+  header nav .content .wide{
+      display: none;
+    }
+
+  header nav .content .narrow{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      color: white;
+      padding: 1rem 0;
+    }
+
+  header nav .content .narrow img{
+      height: 1.5rem;
+      margin-left: 2rem;
+    }
+
+  header nav .content .narrow a{
+      color: white;
+      text-decoration: none;
+      margin-right: 2rem;
+      /*float: right; trying to space between the logo and nav, didn't work,
+      used justify content instead and it worked*/
+    }
+
+  /*Moto*/
+  header .moto{ /*couldn't position the moto here as well :(*/
+      position: relative;
+      top: 9rem;
+      /*left: 11.77rem;*/
+      background-color: white;
+      line-height: 1.2;
+      padding: 1rem 5rem;
+      width: 100%;
+    }
+  /*Moto END*/
+
+  /*Main:: couldn't change it's alignment*/
+  .main .content .top{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /*width: 30rem;
+    height: 8rem;*/
+    margin-top: 3rem;
+  }
+
+  .main .content .top .fiture,
+  .main .content .top .fiture-1{
+    width: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 3rem;
+  }
+}/*Mobile query END*/
